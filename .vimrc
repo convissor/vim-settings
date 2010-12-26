@@ -167,3 +167,6 @@ endif
 
 " Set the <Leader> for combo commands
 let mapleader = ","
+
+" :CONVISSOR:  Disable code folding.
+set nofoldenable
