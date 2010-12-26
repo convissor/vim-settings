@@ -1,3 +1,7 @@
+" :CONVISSOR:  Disable taglist.
+finish
+
+
 " File: taglist.vim
 " Author: Yegappan Lakshmanan (yegappan AT yahoo DOT com)
 " Version: 4.5
