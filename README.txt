@@ -1,3 +1,15 @@
+Dan's Fork
+~~~~~~~~~~
+
+This is my fork of Andrei's excellent vim settings.  My changes are
+annotated in the sources using ":CONVISSOR:".  My adjustments are:
+* turning off code folding
+* disabling the taglist plugin
+
+The rest of the text below here is from Andrei's original file...
+
+
+
 Intro
 ~~~~~
 
