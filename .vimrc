@@ -44,7 +44,8 @@ set nohlsearch
 set nrformats=octal,hex,alpha
 
 " Use F10 to toggle 'paste' mode
-set pastetoggle=<F10>
+" :CONVISSOR: changed F10 to F2
+set pastetoggle=<F2>
 
 " Show line, column number, and relative position within a file in the status line
 set ruler
@@ -170,3 +171,7 @@ let mapleader = ","
 
 " :CONVISSOR:  Disable code folding.
 set nofoldenable
+" :CONVISSOR:  Allow more tabs/files to be opened.
+set tabpagemax=30
+" :CONVISSOR:  PEAR coding standards.
+"set expandtab tabstop=4 shiftwidth=4 softtabstop=4
