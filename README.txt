@@ -10,6 +10,9 @@ annotated in the sources using ":CONVISSOR:".  My adjustments are:
 * Use F10 to completely turn off line wrapping.
 * Use SP to turn spelling on and SN to turn it off.
 
+I've also included an install script, "setup.sh", to create the symlinks
+from .vim and .vimrc to the files in this repository.
+
 The rest of the text below here is from Andrei's original file...
 
 
