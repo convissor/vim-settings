@@ -3,7 +3,12 @@ Dan's Fork
 
 This is my fork of Andrei's excellent vim settings.  My changes are
 annotated in the sources using ":CONVISSOR:".  My adjustments are:
-* turning off code folding
+* Use F2 instead of F10 to toggle 'paste' mode.
+* Disable code folding.
+* Allow more tabs/files to be opened. (30)
+* Automatically nest with spaces if it's a PEAR file.
+* Use F10 to completely turn off line wrapping.
+* Use SP to turn spelling on and SN to turn it off.
 
 The rest of the text below here is from Andrei's original file...
 

@@ -43,8 +43,7 @@ set nohlsearch
 " Enable CTRL-A/CTRL-X to work on octal and hex numbers, as well as characters
 set nrformats=octal,hex,alpha
 
-" Use F10 to toggle 'paste' mode
-" :CONVISSOR: changed F10 to F2
+" Use F10 to toggle 'paste' mode.  :CONVISSOR: Use F2 instead.
 set pastetoggle=<F2>
 
 " Show line, column number, and relative position within a file in the status line
@@ -169,9 +168,19 @@ endif
 " Set the <Leader> for combo commands
 let mapleader = ","
 
+
 " :CONVISSOR:  Disable code folding.
 set nofoldenable
+
 " :CONVISSOR:  Allow more tabs/files to be opened.
 set tabpagemax=30
-" :CONVISSOR:  PEAR coding standards.
-"set expandtab tabstop=4 shiftwidth=4 softtabstop=4
+
+" :CONVISSOR:  Nest with spaces if it's a PEAR file.
+autocmd BufNewFile,BufRead *pear* set expandtab tabstop=4 shiftwidth=4 softtabstop=4
+
+" :CONVISSOR:  Use F10 to completely turn off line wrapping.
+map <F10> :set nowrap nolinebreak textwidth=0 wrapmargin=0
+
+" :CONVISSOR:  Use SP to turn spelling on and SN to turn it off.
+command SP setlocal spell spelllang=en_us
+command SN setlocal nospell
