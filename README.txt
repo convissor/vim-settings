@@ -7,6 +7,7 @@ annotated in the sources using ":CONVISSOR:".  My adjustments are:
 * Disable code folding.
 * Allow more tabs/files to be opened. (30)
 * Automatically nest with spaces if it's a PEAR file.
+* View tabs as three spaces to clarify if modes are mixed.
 * Use F10 to completely turn off line wrapping.
 * Use SP to turn spelling on and SN to turn it off.
 

@@ -175,6 +175,9 @@ set nofoldenable
 " :CONVISSOR:  Allow more tabs/files to be opened.
 set tabpagemax=30
 
+" :CONVISSOR:  View tabs as three spaces to clarify if modes are mixed.
+set tabstop=3 shiftwidth=3 softtabstop=3
+
 " :CONVISSOR:  Nest with spaces if it's a PEAR file.
 autocmd BufNewFile,BufRead *pear* set expandtab tabstop=4 shiftwidth=4 softtabstop=4
 
