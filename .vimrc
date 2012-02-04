@@ -187,3 +187,7 @@ map <F10> :set nowrap nolinebreak textwidth=0 wrapmargin=0
 " :CONVISSOR:  Use SP to turn spelling on and SN to turn it off.
 command SP setlocal spell spelllang=en_us
 command SN setlocal nospell
+
+" :CONVISSOR:  Highlight trailing whitespace.
+highlight WhitespaceEOL ctermbg=red guibg=red
+match WhitespaceEOL /\s\+$/
