@@ -13,6 +13,7 @@ annotated in the sources using ":CONVISSOR:".  My adjustments are:
 * Highlight trailing whitespace.
 * Include tpope's fugitive plugin.
 * Include tpope's endwise plugin.
+* Include Karl Guertin's autoclose plugin.
 
 I've also included an install script, "setup.sh", to create the symlinks
 from .vim and .vimrc to the files in this repository.
