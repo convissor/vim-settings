@@ -191,3 +191,9 @@ command SN setlocal nospell
 " :CONVISSOR:  Highlight trailing whitespace.
 highlight WhitespaceEOL ctermbg=red guibg=red
 autocmd BufWinEnter * match WhitespaceEOL /\s\+$/
+
+" :CONVISSOR:  Highlight mixed up nesting.  (First stab, refine it.)
+highlight NestingMixupSpace ctermbg=DarkMagenta guibg=DarkMagenta
+highlight NestingMixupTab ctermbg=DarkMagenta guibg=DarkMagenta
+autocmd BufWinEnter * match NestingMixupSpace /^\t*\zs \+\ze[^*]/
+autocmd BufWinEnter *pear* match NestingMixupTab /^ *\zs\t\+\ze[^*]/
