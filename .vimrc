@@ -190,4 +190,4 @@ command SN setlocal nospell
 
 " :CONVISSOR:  Highlight trailing whitespace.
 highlight WhitespaceEOL ctermbg=red guibg=red
-match WhitespaceEOL /\s\+$/
+autocmd BufWinEnter * match WhitespaceEOL /\s\+$/
