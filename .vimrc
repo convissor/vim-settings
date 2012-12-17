@@ -169,14 +169,14 @@ endif
 let mapleader = ","
 
 
+" :CONVISSOR: :ETSY:  Space for nesting.
+set expandtab tabstop=4 shiftwidth=4 softtabstop=4
+
 " :CONVISSOR:  Disable code folding.
 set nofoldenable
 
 " :CONVISSOR:  Allow more tabs/files to be opened.
 set tabpagemax=30
-
-" :CONVISSOR:  Nest with spaces if it's a PEAR file.
-autocmd BufNewFile,BufRead *pear* set expandtab tabstop=4 shiftwidth=4 softtabstop=4
 
 " :CONVISSOR:  Use F10 to completely turn off line wrapping.
 map <F10> :set nowrap nolinebreak textwidth=0 wrapmargin=0
@@ -190,7 +190,5 @@ highlight WhitespaceEOL ctermbg=red guibg=red
 autocmd BufWinEnter * match WhitespaceEOL /\s\+$/
 
 " :CONVISSOR:  Highlight mixed up nesting.  (First stab, refine it.)
-highlight NestingMixupSpace ctermbg=DarkMagenta guibg=DarkMagenta
-autocmd BufWinEnter * 2match NestingMixupSpace /^\t*\zs \+\ze[^*]/
 highlight NestingMixupTab ctermbg=DarkMagenta guibg=DarkMagenta
-autocmd BufWinEnter *pear* 3match NestingMixupTab /^ *\zs\t\+\ze[^*]/
+autocmd BufWinEnter * 3match NestingMixupTab /^ *\zs\t\+\ze[^*]/
