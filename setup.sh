@@ -1,6 +1,7 @@
 #! /bin/bash
 
-dir=`dirname "$0"`
+dir="$(cd "$(dirname "$0")" && pwd)"
+parent_dir="$(dirname "$dir")"
 
-ln -s "$dir/vim-settings/.vim" ~/.vim
-ln -s "$dir/vim-settings/.vimrc" ~/.vimrc
+ln -s "$dir/vim-settings/.vim" "$parent_dir/.vim"
+ln -s "$dir/vim-settings/.vimrc" "$parent_dir/.vimrc"
