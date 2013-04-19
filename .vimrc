@@ -192,3 +192,9 @@ autocmd BufWinEnter * match WhitespaceEOL /\s\+$/
 " :CONVISSOR:  Highlight mixed up nesting.  (First stab, refine it.)
 highlight NestingMixupTab ctermbg=DarkMagenta guibg=DarkMagenta
 autocmd BufWinEnter * 3match NestingMixupTab /^ *\zs\t\+\ze[^*]/
+
+" :CONVISSOR:  Disable syntax highlighting in large files to speed opening.
+au BufReadPost * if getfsize(bufname("%")) > 102400 | set syntax= | endif
+
+" :CONVISSOR:  Have ctag open new tab instead of changing existing buffer.
+:nnoremap <silent><Leader><C-]> <C-w><C-]><C-w>T
