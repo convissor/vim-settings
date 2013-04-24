@@ -197,4 +197,4 @@ autocmd BufWinEnter * 3match NestingMixupTab /^ *\zs\t\+\ze[^*]/
 au BufReadPost * if getfsize(bufname("%")) > 102400 | set syntax= | endif
 
 " :CONVISSOR:  Have ctag open new tab instead of changing existing buffer.
-:nnoremap <silent><Leader><C-]> <C-w><C-]><C-w>T
+nnoremap <C-]> <C-w><C-]><C-w>T
