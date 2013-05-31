@@ -178,6 +178,11 @@ set nofoldenable
 " :CONVISSOR:  Allow more tabs/files to be opened.
 set tabpagemax=30
 
+" :CONVISSOR:  Nest with spaces if it's a PEAR file.
+autocmd BufNewFile,BufRead *pear* set expandtab tabstop=4 shiftwidth=4 softtabstop=4
+autocmd BufNewFile,BufRead *mdb2* set expandtab tabstop=4 shiftwidth=4 softtabstop=4
+autocmd BufNewFile,BufRead *.js set expandtab tabstop=4 shiftwidth=4 softtabstop=4
+
 " :CONVISSOR:  Use F10 to completely turn off line wrapping.
 map <F10> :set nowrap nolinebreak textwidth=0 wrapmargin=0
 
