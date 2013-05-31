@@ -180,8 +180,8 @@ autocmd BufNewFile,BufRead *pear* set expandtab tabstop=4 shiftwidth=4 softtabst
 autocmd BufNewFile,BufRead *mdb2* set expandtab tabstop=4 shiftwidth=4 softtabstop=4
 autocmd BufNewFile,BufRead *.js set expandtab tabstop=4 shiftwidth=4 softtabstop=4
 
-" :CONVISSOR:  Use F10 to completely turn off line wrapping.
-map <F10> :set nowrap nolinebreak textwidth=0 wrapmargin=0
+" :CONVISSOR:  Use F12 to completely turn off line wrapping.
+map <F12> :set nowrap nolinebreak textwidth=0 wrapmargin=0
 
 " :CONVISSOR:  Use SP to turn spelling on and SN to turn it off.
 command SP setlocal spell spelllang=en_us
