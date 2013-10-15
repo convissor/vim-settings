@@ -193,7 +193,7 @@ autocmd BufWinEnter * match WhitespaceEOL /\s\+$/
 
 " :CONVISSOR:  Highlight mixed up nesting.  (First stab, refine it.)
 highlight NestingMixupSpace ctermbg=DarkMagenta guibg=DarkMagenta
-autocmd BufWinEnter * 2match NestingMixupSpace /^\t*\zs \+\ze[^*]/
+autocmd BufWinEnter * 2match NestingMixupSpace /\(^\t*\zs \+\ze[^*]\|[^\t]\zs\t\+\ze\)/
 highlight NestingMixupTab ctermbg=DarkMagenta guibg=DarkMagenta
 autocmd BufWinEnter *pear* 3match NestingMixupTab /^ *\zs\t\+\ze[^*]/
 
