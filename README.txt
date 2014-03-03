@@ -14,10 +14,11 @@ annotated in the sources using ":CONVISSOR:".  My adjustments are:
 * Include tpope's fugitive plugin.
 * Include tpope's endwise plugin.
 * Include Karl Guertin's autoclose plugin.
+* Include my ctags_for_svn plugin.
 * Updated the taglist plugin to 4.6.
 
 I've also included an install script, "setup.sh", to create the symlinks
-from .vim and .vimrc to the files in this repository.
+from ~/.vim and ~/.vimrc to those elements in this repository.
 
 The rest of the text below here is from Andrei's original file...
 
