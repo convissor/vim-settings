@@ -16,6 +16,7 @@ annotated in the sources using ":CONVISSOR:".  My adjustments are:
 * Include Karl Guertin's autoclose plugin.
 * Include my ctags_for_svn plugin.
 * Updated the taglist plugin to 4.6.
+* Updated the matchit plugin to 1.13.2.
 
 I've also included an install script, "setup.sh", to create the symlinks
 from ~/.vim and ~/.vimrc to those elements in this repository.
