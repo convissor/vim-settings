@@ -101,8 +101,9 @@ au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")|execute("normal 
 set t_kb=
 fixdel
 
-" Avoid loading MatchParen plugin
-let loaded_matchparen = 1
+" Avoid loading MatchParen plugin.
+" :CONVISSOR:  wait, I like MatchParen; comment out the line disabling it.
+"let loaded_matchparen = 1
 
 " netRW: Open files in a split window
 let g:netrw_browse_split = 1

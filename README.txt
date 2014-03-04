@@ -11,6 +11,7 @@ annotated in the sources using ":CONVISSOR:".  My adjustments are:
 * Use SP to turn spelling on and SN to turn it off.
 * Highlight trailing whitespace.
 * Highlight mixed up nesting.
+* Re-enable the MatchParen plugin.
 * Include tpope's fugitive plugin.
 * Include tpope's endwise plugin.
 * Include Karl Guertin's autoclose plugin.
