@@ -12,6 +12,7 @@ annotated in the sources using ":CONVISSOR:".  My adjustments are:
 * Highlight trailing whitespace.
 * Highlight mixed up nesting.
 * Re-enable the MatchParen plugin.
+* Remove .vim/after/ftplugin/php.vim
 * Include tpope's fugitive plugin.
 * Include tpope's endwise plugin.
 * Include Karl Guertin's autoclose plugin.
