@@ -201,5 +201,11 @@ autocmd BufWinEnter *pear* 3match NestingMixupTab /^ *\zs\t\+\ze[^*]/
 " :CONVISSOR:  Disable syntax highlighting in large files to speed opening.
 au BufReadPost * if getfsize(bufname("%")) > 102400 | set syntax= | endif
 
+" :CONVISSOR:  Change matchparen colors to avoid syntax highlight ambiguity.
+highlight MatchParen ctermbg=Blue ctermfg=White
+
+" :CONVISSOR:  Get <:> out of matchpairs.
+autocmd BufRead * set matchpairs=(:),{:},[:]
+
 " :CONVISSOR:  Have ctag open new tab instead of changing existing buffer.
 nnoremap <C-]> <C-w><C-]><C-w>T

@@ -12,6 +12,8 @@ annotated in the sources using ":CONVISSOR:".  My adjustments are:
 * Highlight trailing whitespace.
 * Highlight mixed up nesting.
 * Re-enable the MatchParen plugin.
+* Change matchparen colors to avoid syntax highlight ambiguity.
+* Get <:> out of matchpairs.
 * Remove .vim/after/ftplugin/php.vim
 * Include tpope's fugitive plugin.
 * Include tpope's endwise plugin.
