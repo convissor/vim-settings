@@ -15,12 +15,13 @@ annotated in the sources using ":CONVISSOR:".  My adjustments are:
 * Change matchparen colors to avoid syntax highlight ambiguity.
 * Get <:> out of matchpairs.
 * Remove .vim/after/ftplugin/php.vim
+* Have tags open in new tab, jump directly to tag if only one match.
 * Include tpope's fugitive plugin.
 * Include tpope's endwise plugin.
 * Include Karl Guertin's autoclose plugin.
 * Include my ctags_for_svn plugin.
 * Updated the taglist plugin to 4.6.
-* Removed the matchit plugin; it's in Vim now and 1.13.2 is broken
+* Removed the matchit plugin; it's in Vim now and 1.13.2 is broken.
 
 I've also included an install script, "setup.sh", to create the symlinks
 from ~/.vim and ~/.vimrc to those elements in this repository.
