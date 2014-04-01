@@ -207,5 +207,5 @@ highlight MatchParen ctermbg=Blue ctermfg=White
 " :CONVISSOR:  Get <:> out of matchpairs.
 autocmd BufRead * set matchpairs=(:),{:},[:]
 
-" :CONVISSOR:  Have tags open in new tab, jump directly to tag if only one match.
+" :CONVISSOR:  Open tags in new tab, jump directly to tag if only one match.
 nnoremap <C-]> :tab tjump <C-r><C-w><CR>
