@@ -6,6 +6,7 @@ annotated in the sources using ":CONVISSOR:".  My adjustments are:
 * Use F2 instead of F10 to toggle 'paste' mode.
 * Disable code folding.
 * Allow more tabs/files to be opened. (30)
+* Map ,x and ,q to my TabCloseLeft() function.
 * Automatically nest with spaces if it's a PEAR file.
 * Use F10 to completely turn off line wrapping.
 * Use SP to turn spelling on and SN to turn it off.

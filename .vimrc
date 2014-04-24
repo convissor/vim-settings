@@ -115,7 +115,8 @@ let g:netrw_browse_split = 1
 " save changes
 map ,s :w<CR>
 " exit vim without saving any changes
-map ,q :q!<CR>
+" :CONVISSOR:  will be using ",q" for my own purposes; comment out Andrei's.
+" map ,q :q!<CR>
 " exit vim saving changes
 map ,w :x<CR>
 " switch to upper/lower window quickly
@@ -209,3 +210,14 @@ autocmd BufRead * set matchpairs=(:),{:},[:]
 
 " :CONVISSOR:  Open tags in new tab, jump directly to tag if only one match.
 nnoremap <C-]> :tab tjump <C-r><C-w><CR>
+
+" :CONVISSOR:  Move left when closing tab.
+function! TabCloseLeft(cmd)
+	if winnr('$') == 1 && tabpagenr('$') > 1 && tabpagenr() > 1 && tabpagenr() < tabpagenr('$')
+		exec a:cmd | tabprevious
+	else
+		exec a:cmd
+	endif
+endfunction
+noremap ,x :call TabCloseLeft('x')<CR>
+noremap ,q :call TabCloseLeft('q!')<CR>
