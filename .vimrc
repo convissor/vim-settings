@@ -211,7 +211,7 @@ autocmd BufRead * set matchpairs=(:),{:},[:]
 " :CONVISSOR:  Open tags in new tab, jump directly to tag if only one match.
 nnoremap <C-]> :tab tjump <C-r><C-w><CR>
 
-" :CONVISSOR:  Move left when closing tab.
+" :CONVISSOR:  Declare function for moving left when closing a tab.
 function! TabCloseLeft(cmd)
 	if winnr('$') == 1 && tabpagenr('$') > 1 && tabpagenr() > 1 && tabpagenr() < tabpagenr('$')
 		exec a:cmd | tabprevious
@@ -219,5 +219,7 @@ function! TabCloseLeft(cmd)
 		exec a:cmd
 	endif
 endfunction
+" :CONVISSOR:  ,x = Write if changes made, exit, move left one tab.
 noremap ,x :call TabCloseLeft('x')<CR>
+" :CONVISSOR:  ,q = Don't save changes, exit, move left one tab.
 noremap ,q :call TabCloseLeft('q!')<CR>
